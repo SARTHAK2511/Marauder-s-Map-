@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0a991ff7babcf890b0b95ef4b398ef48 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0a991ff7babcf890b0b95ef4b398ef48" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0a991ff7babcf890b0b95ef4b398ef48 = L.map(
+                "map_0a991ff7babcf890b0b95ef4b398ef48",
+                {
+                    center: [22.717368917138423, 75.86040687456263],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_03389cdd70c75bc5d987e0452917a25f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_03389cdd70c75bc5d987e0452917a25f.addTo(map_0a991ff7babcf890b0b95ef4b398ef48);
+        
+    
+            var marker_79729594dec798f600f43837744943d4 = L.marker(
+                [22.72805714175105, 75.83457183733118],
+                {}
+            ).addTo(map_0a991ff7babcf890b0b95ef4b398ef48);
+        
+    
+            var icon_c46f8db4d337d76ad024e6c01a3ab571 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_79729594dec798f600f43837744943d4.setIcon(icon_c46f8db4d337d76ad024e6c01a3ab571);
+        
+    
+        var popup_7f73841ff4e6eaecb570fa7cedc03c78 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_591d05495d05a75ce35455fb620d3f41 = $(`<div id="html_591d05495d05a75ce35455fb620d3f41" style="width: 100.0%; height: 100.0%;">Start</div>`)[0];
+                popup_7f73841ff4e6eaecb570fa7cedc03c78.setContent(html_591d05495d05a75ce35455fb620d3f41);
+            
+        
+
+        marker_79729594dec798f600f43837744943d4.bindPopup(popup_7f73841ff4e6eaecb570fa7cedc03c78)
+        ;
+
+        
+    
+    
+            var marker_f115ffcf7cc66007a84e025c7d51fa17 = L.marker(
+                [22.706680692525797, 75.88624191179407],
+                {}
+            ).addTo(map_0a991ff7babcf890b0b95ef4b398ef48);
+        
+    
+            var icon_47e4f1a20848c4f75571e10e6302ac5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f115ffcf7cc66007a84e025c7d51fa17.setIcon(icon_47e4f1a20848c4f75571e10e6302ac5f);
+        
+    
+        var popup_65888a4b279cceaa6597d293df17127f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d5dfb5f065aa8c28382e8e712ad57ab = $(`<div id="html_5d5dfb5f065aa8c28382e8e712ad57ab" style="width: 100.0%; height: 100.0%;">End</div>`)[0];
+                popup_65888a4b279cceaa6597d293df17127f.setContent(html_5d5dfb5f065aa8c28382e8e712ad57ab);
+            
+        
+
+        marker_f115ffcf7cc66007a84e025c7d51fa17.bindPopup(popup_65888a4b279cceaa6597d293df17127f)
+        ;
+
+        
+    
+    
+            var poly_line_3a429d2d465d12536c5a332cd6c995c2 = L.polyline(
+                [[22.7279473, 75.8343118], [22.7277473, 75.834728], [22.7275819, 75.8352393], [22.7277066, 75.8352635], [22.7277244, 75.8353354], [22.7277099, 75.8357912], [22.7276775, 75.8361649], [22.7274165, 75.8370147], [22.727193, 75.8369212], [22.7266853, 75.8386078], [22.7266315, 75.8389615], [22.7266575, 75.8393979], [22.7267683, 75.8400803], [22.7268831, 75.840788], [22.7269611, 75.8412002], [22.7268706, 75.8412496], [22.7268806, 75.841321], [22.7268806, 75.8413682], [22.7268806, 75.8415505], [22.7265058, 75.8432699], [22.7262173, 75.8445208], [22.7260783, 75.8451215], [22.7259436, 75.8457078], [22.7259454, 75.8458451], [22.7259847, 75.8460119], [22.7255151, 75.8460882], [22.7252457, 75.846093], [22.7251471, 75.8460921], [22.7248921, 75.8461534], [22.7244174, 75.8461478], [22.7242557, 75.8461459], [22.7236877, 75.846192], [22.7236073, 75.8461893], [22.7231581, 75.8461745], [22.7228601, 75.8461716], [22.7222922, 75.8461689], [22.7220741, 75.8461566], [22.7218276, 75.8461198], [22.7212051, 75.8460735], [22.7210581, 75.8460681], [22.72105, 75.8464361], [22.7210001, 75.8465838], [22.7209628, 75.8469089], [22.7209581, 75.8470132], [22.7209242, 75.8472507], [22.7209042, 75.8476864], [22.720473, 75.8476346], [22.7203863, 75.848268], [22.7203347, 75.8490806], [22.7199332, 75.8490426], [22.7198352, 75.8490451], [22.7193025, 75.8490038], [22.71926, 75.8494762], [22.719254, 75.8495207], [22.7191829, 75.8500693], [22.7191401, 75.8506249], [22.7191167, 75.8508412], [22.7191208, 75.8510595], [22.7190886, 75.8517883], [22.7190602, 75.8521328], [22.7189619, 75.8530783], [22.7189153, 75.8536022], [22.7182452, 75.8535482], [22.7180234, 75.8535547], [22.7169056, 75.8535141], [22.7166878, 75.8535143], [22.7161511, 75.8534678], [22.7161048, 75.8534638], [22.7161504, 75.8537394], [22.716208, 75.8540169], [22.7162964, 75.8546216], [22.7163676, 75.855024], [22.7163618, 75.8551241], [22.7163813, 75.855405], [22.7163762, 75.8554764], [22.7163679, 75.8557389], [22.7163727, 75.8561951], [22.7164111, 75.856514], [22.7164233, 75.8571035], [22.7164541, 75.8575509], [22.7164442, 75.8579147], [22.7164313, 75.8580069], [22.7163786, 75.8585323], [22.7163752, 75.8588561], [22.716376, 75.8590185], [22.7164022, 75.8595052], [22.716401, 75.8595606], [22.7164384, 75.8596157], [22.7164522, 75.8596896], [22.7164314, 75.8601749], [22.7163372, 75.8608052], [22.7163177, 75.8613897], [22.7162893, 75.861622], [22.716288, 75.8616402], [22.7162363, 75.8623384], [22.71622, 75.862558], [22.7161929, 75.8628359], [22.7161901, 75.8628649], [22.7161307, 75.8634726], [22.7160885, 75.8639375], [22.7160616, 75.8642301], [22.7160519, 75.864336], [22.715983, 75.8647905], [22.7159295, 75.8650784], [22.7159132, 75.865116], [22.7158086, 75.8656033], [22.7157339, 75.8658923], [22.7156607, 75.8659479], [22.7155721, 75.866042], [22.7153811, 75.8661661], [22.7152016, 75.8662299], [22.7146393, 75.8663339], [22.7144795, 75.8663598], [22.7144056, 75.8664323], [22.7144023, 75.8672211], [22.7136615, 75.867278], [22.7129314, 75.8673149], [22.7128183, 75.8673208], [22.7127808, 75.8676854], [22.7126972, 75.8681193], [22.7124356, 75.8690559], [22.7120392, 75.8698574], [22.7119068, 75.8701407], [22.7116596, 75.8704878], [22.7116418, 75.8705143], [22.7111517, 75.8712445], [22.7106599, 75.8720055], [22.7103515, 75.8724827], [22.7101219, 75.8728648], [22.7099581, 75.8731017], [22.7097099, 75.8735164], [22.7096654, 75.8736097], [22.7092048, 75.8743174], [22.7095629, 75.8745336], [22.7093314, 75.8749712], [22.7090681, 75.875469], [22.7097645, 75.8755116], [22.7097677, 75.8757558], [22.7098314, 75.8762769], [22.7098642, 75.8765322], [22.7099101, 75.8768898], [22.7099712, 75.8772802], [22.7101508, 75.8782039], [22.7101974, 75.8783873], [22.7106097, 75.8800076], [22.7107769, 75.8805991], [22.7105045, 75.8806064], [22.7108311, 75.8810872], [22.7109139, 75.8813045], [22.7109914, 75.8815789], [22.7110664, 75.8818613], [22.7112747, 75.8827602], [22.7113254, 75.8828065], [22.7112753, 75.8828333], [22.7112333, 75.8828762], [22.7112049, 75.8829307], [22.7111948, 75.8829715], [22.7111924, 75.8830137], [22.7111157, 75.8830272], [22.7107336, 75.8831193], [22.7105688, 75.883204], [22.7104765, 75.883302], [22.7103119, 75.8834768], [22.710045, 75.8837785], [22.7095569, 75.8844114], [22.7095049, 75.8844757], [22.7092651, 75.8846852], [22.7091759, 75.8847632], [22.7087439, 75.884984], [22.7080089, 75.885329], [22.7077008, 75.8854736], [22.707488, 75.8855935], [22.7068863, 75.885852], [22.7066872, 75.8859445], [22.7065797, 75.8859851]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_0a991ff7babcf890b0b95ef4b398ef48);
+        
+    
+            var marker_5c12776ff288687f6640de004d1e62db = L.marker(
+                [22.7065797, 75.8859851],
+                {}
+            ).addTo(map_0a991ff7babcf890b0b95ef4b398ef48);
+        
+    
+            var icon_05338e394fa3b23f1d583e6822a506e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_5c12776ff288687f6640de004d1e62db.setIcon(icon_05338e394fa3b23f1d583e6822a506e2);
+        
+    
+        var popup_02801db91c638f923085122e48e8b383 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a53a4d6cf4577c971a1462805c9f0f5 = $(`<div id="html_5a53a4d6cf4577c971a1462805c9f0f5" style="width: 100.0%; height: 100.0%;">Total Distance: 7.33 km    Fare Estimate: Rs 72 - Rs 119  </div>`)[0];
+                popup_02801db91c638f923085122e48e8b383.setContent(html_5a53a4d6cf4577c971a1462805c9f0f5);
+            
+        
+
+        marker_5c12776ff288687f6640de004d1e62db.bindPopup(popup_02801db91c638f923085122e48e8b383)
+        ;
+
+        
+    
+    
+            var marker_55650dc007d1e3bbd31166eb8bfaf214 = L.marker(
+                [22.77133, 75.90985],
+                {}
+            ).addTo(map_0a991ff7babcf890b0b95ef4b398ef48);
+        
+    
+        var popup_ac0ede7e9f2bb1ea8e302fa761357712 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0ac63f1ff837d49982b651db72290783 = $(`<div id="html_0ac63f1ff837d49982b651db72290783" style="width: 100.0%; height: 100.0%;">Dealer: Patel Motors (Indore) Pvt. Ltd. Address: 13/19, Pipliya Kumar Chouraha,Ring Road,Dewas Naka, Indore,452010 Phone: 9826034997, 9926243331, 9644400651</div>`)[0];
+                popup_ac0ede7e9f2bb1ea8e302fa761357712.setContent(html_0ac63f1ff837d49982b651db72290783);
+            
+        
+
+        marker_55650dc007d1e3bbd31166eb8bfaf214.bindPopup(popup_ac0ede7e9f2bb1ea8e302fa761357712)
+        ;
+
+        
+    
+    
+            marker_55650dc007d1e3bbd31166eb8bfaf214.bindTooltip(
+                `<div>
+                     Patel Motors (Indore) Pvt. Ltd.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6ba0f26c275308120f554c23ce9ecf34 = L.marker(
+                [23.17741024, 77.04999975],
+                {}
+            ).addTo(map_0a991ff7babcf890b0b95ef4b398ef48);
+        
+    
+        var popup_db2e25a686559753a43c0aa1ad03c1a9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_248d93c4cef256c204f20adb7563f013 = $(`<div id="html_248d93c4cef256c204f20adb7563f013" style="width: 100.0%; height: 100.0%;">Dealer: Verma Motors Address: Khasra No220/3, Village Rafiq Ganj, Indore Bhopal bypass, ,Near RTO office, Sehore,Madhya Pradesh ,466001 Phone: 8827519863, 7987774294</div>`)[0];
+                popup_db2e25a686559753a43c0aa1ad03c1a9.setContent(html_248d93c4cef256c204f20adb7563f013);
+            
+        
+
+        marker_6ba0f26c275308120f554c23ce9ecf34.bindPopup(popup_db2e25a686559753a43c0aa1ad03c1a9)
+        ;
+
+        
+    
+    
+            marker_6ba0f26c275308120f554c23ce9ecf34.bindTooltip(
+                `<div>
+                     Verma Motors
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_327ed441818a8c49ba5ea7ed875f660b = L.marker(
+                [21.684894, 76.294353],
+                {}
+            ).addTo(map_0a991ff7babcf890b0b95ef4b398ef48);
+        
+    
+        var popup_70fdc4693e54453c14fe6ce9eef7e1b9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e506b14a8461983d032c79b390aaed2e = $(`<div id="html_e506b14a8461983d032c79b390aaed2e" style="width: 100.0%; height: 100.0%;">Dealer: Balaji Motors Address: Indore-Icchapur Highway, Village Kumthi, Tehsil Pandhana,Khandwa - 450337, Madhya Pradesh Phone: 8770050307, 8305377320</div>`)[0];
+                popup_70fdc4693e54453c14fe6ce9eef7e1b9.setContent(html_e506b14a8461983d032c79b390aaed2e);
+            
+        
+
+        marker_327ed441818a8c49ba5ea7ed875f660b.bindPopup(popup_70fdc4693e54453c14fe6ce9eef7e1b9)
+        ;
+
+        
+    
+    
+            marker_327ed441818a8c49ba5ea7ed875f660b.bindTooltip(
+                `<div>
+                     Balaji Motors
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce4beeee98959e02fb5bf5edb44f92d8 = L.marker(
+                [22.70437, 75.92843],
+                {}
+            ).addTo(map_0a991ff7babcf890b0b95ef4b398ef48);
+        
+    
+        var popup_cbe4e4e26a1a16b8c21e4c187531c3d5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_da254e034ac61df16c35c6ad3a77112c = $(`<div id="html_da254e034ac61df16c35c6ad3a77112c" style="width: 100.0%; height: 100.0%;">Dealer: Patel Motors (Indore) Pvt. Ltd. Address: Agra Bombay By pass,Khasra No - 110/1,Bicholi Mardana,452016 Phone: 9294833313, 7047302711, 9644400651</div>`)[0];
+                popup_cbe4e4e26a1a16b8c21e4c187531c3d5.setContent(html_da254e034ac61df16c35c6ad3a77112c);
+            
+        
+
+        marker_ce4beeee98959e02fb5bf5edb44f92d8.bindPopup(popup_cbe4e4e26a1a16b8c21e4c187531c3d5)
+        ;
+
+        
+    
+    
+            marker_ce4beeee98959e02fb5bf5edb44f92d8.bindTooltip(
+                `<div>
+                     Patel Motors (Indore) Pvt. Ltd.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_579849854bf9ddde25e1201d41b0f381 = L.marker(
+                [23.23118, 75.80024],
+                {}
+            ).addTo(map_0a991ff7babcf890b0b95ef4b398ef48);
+        
+    
+        var popup_0dce1c72195e2d877efd1b97c8310ad1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e3ff931db33fe91d46e07f58e651ffce = $(`<div id="html_e3ff931db33fe91d46e07f58e651ffce" style="width: 100.0%; height: 100.0%;">Dealer: Patel Motors (Indore) Pvt. Ltd. Address: Village Chak-kamed, ,Agar Road, ,Ujjain,456001 Phone: 9907956333, 7047302711, 9644400651</div>`)[0];
+                popup_0dce1c72195e2d877efd1b97c8310ad1.setContent(html_e3ff931db33fe91d46e07f58e651ffce);
+            
+        
+
+        marker_579849854bf9ddde25e1201d41b0f381.bindPopup(popup_0dce1c72195e2d877efd1b97c8310ad1)
+        ;
+
+        
+    
+    
+            marker_579849854bf9ddde25e1201d41b0f381.bindTooltip(
+                `<div>
+                     Patel Motors (Indore) Pvt. Ltd.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_61ea663d1d582799e59a9a3f8dcf3b58 = L.marker(
+                [22.77133, 75.90985],
+                {}
+            ).addTo(map_0a991ff7babcf890b0b95ef4b398ef48);
+        
+    
+        var popup_7d4ead325031e629cd8d663bdcbfd239 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8c66e70b2d5ab90c68b44f4099d5c542 = $(`<div id="html_8c66e70b2d5ab90c68b44f4099d5c542" style="width: 100.0%; height: 100.0%;">Dealer: Patel Motors (Indore) Pvt. Ltd. Address: 13/19,Pipliya Kumar Chouraha,Ring Road,Dewas Naka,-452010 Phone: 9644400651, 9826034997</div>`)[0];
+                popup_7d4ead325031e629cd8d663bdcbfd239.setContent(html_8c66e70b2d5ab90c68b44f4099d5c542);
+            
+        
+
+        marker_61ea663d1d582799e59a9a3f8dcf3b58.bindPopup(popup_7d4ead325031e629cd8d663bdcbfd239)
+        ;
+
+        
+    
+    
+            marker_61ea663d1d582799e59a9a3f8dcf3b58.bindTooltip(
+                `<div>
+                     Patel Motors (Indore) Pvt. Ltd.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aedcb1e17992cbe12f74305783f7fa01 = L.marker(
+                [22.70437, 75.92843],
+                {}
+            ).addTo(map_0a991ff7babcf890b0b95ef4b398ef48);
+        
+    
+        var popup_ede7801e51b03bedc334100b1caf302d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_426428139ffc9df2bf71730f93c87ad0 = $(`<div id="html_426428139ffc9df2bf71730f93c87ad0" style="width: 100.0%; height: 100.0%;">Dealer: Patel Motors (Indore) Pvt. Ltd. Address: Agra Bombay By pass,Khasra No - 110/1,Bicholi Mardana-452016 Phone: 9644400651, 9294833313</div>`)[0];
+                popup_ede7801e51b03bedc334100b1caf302d.setContent(html_426428139ffc9df2bf71730f93c87ad0);
+            
+        
+
+        marker_aedcb1e17992cbe12f74305783f7fa01.bindPopup(popup_ede7801e51b03bedc334100b1caf302d)
+        ;
+
+        
+    
+    
+            marker_aedcb1e17992cbe12f74305783f7fa01.bindTooltip(
+                `<div>
+                     Patel Motors (Indore) Pvt. Ltd.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

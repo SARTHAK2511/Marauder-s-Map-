@@ -1,0 +1,58 @@
+[
+    {
+        "latitude": "22.77133",
+        "longitude": "75.90985",
+        "dealer_type_and_name": "Vehicle Dealer & Auth. Service Centre",
+        "dealer_name": "Patel Motors (Indore) Pvt. Ltd.",
+        "phones": "9826034997, 9926243331, 9644400651",
+        "address": "13/19, Pipliya Kumar Chouraha,Ring Road,Dewas Naka, Indore,452010"
+    },
+    {
+        "latitude": "23.17741024",
+        "longitude": "77.04999975",
+        "dealer_type_and_name": "Eicher Smart Service",
+        "dealer_name": "Verma Motors",
+        "phones": "8827519863, 7987774294",
+        "address": "Khasra No220/3, Village Rafiq Ganj, Indore Bhopal bypass, ,Near RTO office, Sehore,Madhya Pradesh ,466001"
+    },
+    {
+        "latitude": "21.684894",
+        "longitude": "76.294353",
+        "dealer_type_and_name": "Eicher Smart Service",
+        "dealer_name": "Balaji Motors",
+        "phones": "8770050307, 8305377320",
+        "address": "Indore-Icchapur Highway, Village Kumthi, Tehsil Pandhana,Khandwa - 450337, Madhya Pradesh"
+    },
+    {
+        "latitude": "22.70437",
+        "longitude": "75.92843",
+        "dealer_type_and_name": "Vehicle Dealer & Auth. Service Centre",
+        "dealer_name": "Patel Motors (Indore) Pvt. Ltd.",
+        "phones": "9294833313, 7047302711, 9644400651",
+        "address": "Agra Bombay By pass,Khasra No - 110/1,Bicholi Mardana,452016"
+    },
+    {
+        "latitude": "23.23118",
+        "longitude": "75.80024",
+        "dealer_type_and_name": "Eicher Smart Service",
+        "dealer_name": "Patel Motors (Indore) Pvt. Ltd.",
+        "phones": "9907956333, 7047302711, 9644400651",
+        "address": "Village Chak-kamed, ,Agar Road, ,Ujjain,456001"
+    },
+    {
+        "latitude": "22.77133",
+        "longitude": "75.90985",
+        "dealer_type_and_name": "Vehicle Dealer & Auth. Service Centre",
+        "dealer_name": "Patel Motors (Indore) Pvt. Ltd.",
+        "phones": "9644400651, 9826034997",
+        "address": "13/19,Pipliya Kumar Chouraha,Ring Road,Dewas Naka,-452010"
+    },
+    {
+        "latitude": "22.70437",
+        "longitude": "75.92843",
+        "dealer_type_and_name": "Vehicle Dealer & Auth. Service Centre",
+        "dealer_name": "Patel Motors (Indore) Pvt. Ltd.",
+        "phones": "9644400651, 9294833313",
+        "address": "Agra Bombay By pass,Khasra No - 110/1,Bicholi Mardana-452016"
+    }
+]
