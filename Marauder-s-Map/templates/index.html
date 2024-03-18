@@ -20,31 +20,20 @@
   </div>
   <!-- Create a div to hold the map -->
   <div class="filters">
-    <label><input type="radio" name="option" value="quietness" id="quietness"> Quietness</label>
-    <label><input type="radio" name="option" value="shortest-path" id="shortest-path"> Shortest Path</label>
+    <label><input type="radio" name="option" value="quietest" id="quietness"> Quietness</label>
+    <label><input type="radio" name="option" value="shortest" id="shortest-path"> Shortest Path</label>
   </div>
   
   <div id="map"></div>
 
   <div class="map-container">
     <button id="reset-btn" class="map-btn">Reset</button>
-    <div id="map-container"></div>
+    <!-- Removed duplicate id="map-container" -->
+    <div></div> 
     <button id="result-btn" class="map-btn">See Result</button>
   </div>
 
   <!-- Include the JavaScript file for the map functionality -->
-  <script src="{{ url_for('static', filename='map.js') }}"></script>
   <script src="{{ url_for('static', filename='index.js') }}"></script>
-  <script>
-    document.getElementById("result-btn").addEventListener("click", function() {
-        if (document.getElementById("quietness").checked) {
-            window.location.href = '/quietest_html';
-        } else {
-            window.location.href = '/shortest_html';
-        }
-    });
-
-    
-  </script>
 </body>
 </html>

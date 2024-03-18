@@ -1,8 +1,7 @@
-from flask import Flask, render_template, request, jsonify, redirect, url_for
+from flask import Flask, render_template, request, jsonify
 from shortest import calculate_shortest
-from quitest import calculate_quietest
-import webbrowser
-import subprocess
+from quietest import calculate_quietest
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -14,29 +13,16 @@ def process_coordinates():
     data = request.get_json()
     start_coords = data.get('start_coords')
     end_coords = data.get('end_coords')
-
-    print(start_coords, end_coords)
-    shortest_data = calculate_shortest(start_coords,end_coords)
-    quietest_data = calculate_quietest(start_coords,end_coords)
-    print(shortest_data, quietest_data)
-    # result = {'result': output}
-    # response = jsonify(result)
-    # webbrowser.quopen("shortest.html")
-    # Redirect to the route for rendering the HTML file
-    return quietest_data
-    
-
-@app.route('/quietest_html')
-def quietest_html():
-    # Render the HTML file and return it
-    return render_template('quietest.html')
-
-@app.route('/shortest_html')
-def shortest_html():
-    # Render the HTML file and return it
-    return render_template('shortest.html')
+    mode = data.get('mode')
+    print(mode,start_coords, end_coords)
+    if mode == 'shortest':
+        calculate_shortest(start_coords, end_coords)
+        return render_template('shortest.html')  # Render the shortest.html template
+    elif mode == 'quietest':
+        calculate_quietest(start_coords, end_coords)
+        return render_template('quietest.html')  # Render the quietest.html template
+    else:
+        return jsonify({'error': 'Invalid mode'})
 
 if __name__ == '__main__':
-    # webbrowser.open("http://127.0.0.1:5000/render_html")
-    
     app.run(debug=True)
